@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hello-world Test Basic</title>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../web-component-tester/browser.js"></script>
+  <link rel="import" href="../hello-world.html">
+  <link rel="icon" href="../hero.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+  <test-fixture id="hello-world-fixture">
+    <template>
+      <hello-world></hello-world>
+    </template>
+  </test-fixture>
+
+  <script>
+      suite('<hello-world>', function() {
+        var myEl;
+        setup(function() {
+          myEl = fixture('hello-world-fixture');
+        });
+        test('defines the "_hello" property', function() {
+          assert.equal(myEl._hello, 'Hello World');
+        });
+        test('distributed children', function() {
+          var els = myEl.getContentChildren();
+          assert.equal(els.length, 0, 'no distributed nodes');
+        });
+      });
+    </script>
+
+</body>
+
+</html>

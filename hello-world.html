@@ -1,0 +1,22 @@
+<!--
+Polymer hello-world element.
+
+    <hello-world></hello-world>
+
+@demo demo/index.html
+@hero hero.svg
+-->
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="hello-world">
+	<template>
+    <style>
+      :host {
+        display: block;
+        box-sizing: border-box;
+        border:1px solid red;
+      }
+    </style>
+		{{_hello}}
+	</template>
+  <script src="bundle.js"></script>
+</dom-module>
