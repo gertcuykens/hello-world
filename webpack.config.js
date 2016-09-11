@@ -1,11 +1,11 @@
-// var path = require('path')
+var path = require('path')
 var webpack = require('webpack')
 
 var config = {
   // devtool: 'source-map',
-  entry: 'hello-world.js',
+  entry: 'src/hello-world.js',
   output: {
-    path: __dirname, // path.join(__dirname, 'dist'),
+    // path: __dirname, // path.join(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   module: {
@@ -13,8 +13,8 @@ var config = {
       {
         test: /\.js$/,
         loader: 'babel',
-        include: __dirname, // path.join(__dirname, 'src')
-        exclude: [/node_modules/, /bower_components/, 'webpack.config.js', 'bundle.js']
+        include: path.join(__dirname, 'src'),
+        // exclude: [/node_modules/, /bower_components/, 'webpack.config.js', 'bundle.js']
         // query: {
         //   presets: ['es2015', 'react']
         // }

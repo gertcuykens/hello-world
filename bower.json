@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "main": "hello-world.html",
-  "ignore": ["bower_components", "test", "**/.*", "**/.go"],
+  "ignore": ["bower_components", "src", "test", "**/.*"],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0"
   },
