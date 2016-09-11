@@ -26,7 +26,7 @@ Polymer Hello World element.
 
 ## Build
 
-    babel src/hello-world.js -s -o bundle.js
+    babel src -s -o bundle.js
 
 ## Run
 

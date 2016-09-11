@@ -1,0 +1,23 @@
+{
+  "version": "0.1.0",
+  "command": "polymer",
+  "isShellCommand": true,
+  "args": [],
+  "tasks": [
+    {
+      "taskName": "lint",
+      "args": ["--input", "hello-world.html"],
+      "isBuildCommand": true,
+      "isWatching": false,
+      "problemMatcher": [
+        "$jshint"
+      ]
+    },
+    {
+      "taskName": "serve",
+      "args": [],
+      "isTestCommand": true,
+      "showOutput": "always"
+    }
+  ]
+}
