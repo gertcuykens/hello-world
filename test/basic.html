@@ -20,20 +20,20 @@
   </test-fixture>
 
   <script>
-      suite('<hello-world>', function() {
-        var myEl;
-        setup(function() {
-          myEl = fixture('hello-world-fixture');
-        });
-        test('defines the "_hello" property', function() {
-          assert.equal(myEl._hello, 'Hello World');
-        });
-        test('distributed children', function() {
-          var els = myEl.getContentChildren();
-          assert.equal(els.length, 0, 'no distributed nodes');
-        });
+    suite('<hello-world>', function() {
+      var myEl;
+      setup(function() {
+        myEl = fixture('hello-world-fixture');
       });
-    </script>
+      test('defines the "_hello" property', function() {
+        assert.equal(myEl._hello, 'Hello World');
+      });
+      test('distributed children', function() {
+        var els = myEl.getContentChildren();
+        assert.equal(els.length, 0, 'no distributed nodes');
+      });
+    });
+  </script>
 
 </body>
 
