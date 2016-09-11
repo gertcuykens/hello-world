@@ -11,7 +11,7 @@ Polymer({
       value: "Hello World"
     }
   },
-  ready: function(){
-    console.log('Ready2')
+  ready: function () {
+    console.log('Hello World Ready!')
   }
 })
