@@ -4,11 +4,13 @@ Polymer Hello World element.
 
 ## Dependencies
 
-[PolymerCli](https://www.polymer-project.org/1.0/docs/tools/polymer-cli)
+[PolymerCli](https://github.com/Polymer/polymer-cli)
 
 [Bower](https://bower.io)
 
 [Babel](https://babeljs.io)
+
+[Typings](https://github.com/typings/typings)
 
 ## Install
 
@@ -21,7 +23,7 @@ Polymer Hello World element.
 
 ## Lint
 
-    eslint hello-world.js
+    eslint src
     polymer lint --input hello-world.html
 
 ## Build
@@ -35,4 +37,10 @@ Polymer Hello World element.
 hello-world [documentation](http://localhost:8080/components/hello-world/)
 
 hello-world [test](http://localhost:8080/components/hello-world/test/index.html)
+
+## Typings
+
+    npm install -g typings
+    typings install dt~mocha --global --save
+    typings install dt~polymer --global --save
  

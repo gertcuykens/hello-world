@@ -1,22 +1,23 @@
 {
   "version": "0.1.0",
-  "command": "polymer",
+  "command": "make",
   "isShellCommand": true,
   "args": [],
   "tasks": [
     {
-      "taskName": "lint",
-      "args": ["--input", "hello-world.html"],
+      "taskName": "build",
+      "suppressTaskName": false,      
+      "args": [],
+      "showOutput": "always",      
       "isBuildCommand": true,
-      "isWatching": false,
-      "problemMatcher": [
-        "$jshint"
-      ]
+      "isTestCommand": false,      
+      "isWatching": true,
+      "problemMatcher": ["$tsc"]
     },
     {
-      "taskName": "serve",
+      "taskName": "lint",
+      "suppressTaskName": false,      
       "args": [],
-      "isTestCommand": true,
       "showOutput": "always"
     }
   ]
