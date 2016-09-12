@@ -19,7 +19,9 @@ Polymer Hello World element.
     npm install -g babel-preset-es2015
     npm install -g eslint
     npm install -g bower
+    npm install -g typings
     bower install
+    typings install
 
 ## Lint
 
@@ -37,10 +39,3 @@ Polymer Hello World element.
 hello-world [documentation](http://localhost:8080/components/hello-world/)
 
 hello-world [test](http://localhost:8080/components/hello-world/test/index.html)
-
-## Typings
-
-    npm install -g typings
-    typings install dt~mocha --global --save
-    typings install dt~polymer --global --save
- 

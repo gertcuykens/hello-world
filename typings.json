@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
+    "polymer": "registry:dt/polymer#1.1.6+20160317120654"
+  }
+}
