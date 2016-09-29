@@ -6,6 +6,8 @@ ES2015 Hello World element.
 
 [PolymerCli](https://github.com/Polymer/polymer-cli)
 
+[ESLint](http://eslint.org)
+
 [Bower](https://bower.io)
 
 [Babel](https://babeljs.io)
@@ -25,19 +27,12 @@ ES2015 Hello World element.
     typings install dt~polymer --global --save
     typings install dt~webcomponents.js --global --save
 
-## Lint
-
-    eslint src
-    polymer lint --input hello-world.html
-
-## Build
-
-    babel src -s -o bundle.js
-
 ## Run
 
     polymer serve
 
+hello-world [demo](http://localhost:8080/components/hello-world/demo/)
+
 hello-world [documentation](http://localhost:8080/components/hello-world/)
 
-hello-world [test](http://localhost:8080/components/hello-world/test/index.html)
+hello-world [test](http://localhost:8080/components/hello-world/test/)
