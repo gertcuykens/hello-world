@@ -6,7 +6,7 @@ Polymer hello-world element.
 @demo demo/index.html
 @hero hero.svg
 -->
-<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../polymer/polymer-element.html">
 <dom-module id="hello-world">
   <template>
     <style>
@@ -16,7 +16,8 @@ Polymer hello-world element.
         border: 1px solid red;
       }
     </style>
-    {{_hello}}
+    <p>Test</p>
+    <slot></slot>
   </template>
-  <script src="bundle.js"></script>
+  <script src="src/hello-world.js"></script>
 </dom-module>

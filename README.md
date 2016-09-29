@@ -21,7 +21,9 @@ Polymer Hello World element.
     npm install -g bower
     npm install -g typings
     bower install
-    typings install
+    typings install dt~mocha --global --save
+    typings install dt~polymer --global --save
+    typings install dt~webcomponents.js --global --save
 
 ## Lint
 
