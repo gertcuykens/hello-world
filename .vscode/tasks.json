@@ -8,10 +8,10 @@
       "taskName": "build",
       "suppressTaskName": false,      
       "args": [],
-      "showOutput": "always",      
+      "showOutput": "silent",
       "isBuildCommand": true,
       "isTestCommand": false,      
-      "isWatching": true,
+      "isWatching": false,
       "problemMatcher": ["$tsc"]
     },
     {

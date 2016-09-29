@@ -1,7 +1,8 @@
 build :
-	polymer serve&
-	babel src -w -s -o bundle.js
+	tsc
+	# polymer serve&
+	# babel src -w -s -o bundle.js
 
 lint :
-	eslint src
+	eslint hello-world.html
 	polymer lint --input hello-world.html

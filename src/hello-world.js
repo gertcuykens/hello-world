@@ -1,17 +1,16 @@
-Polymer({
-  is: 'hello-world',
-  properties: {
-    /**
-     * `_hello` private variable.
-     *
-     * @type string
-     */
-    _hello: {
-      type: String,
-      value: "Hello World"
+class HelloWorld extends Polymer.Element {
+    static get is() {
+        return 'hello-world';
     }
-  },
-  ready: function () {
-    console.log('Hello World Ready!')
-  }
-})
+    static get config() {
+        return {};
+    }
+    constructor() {
+        super();
+    }
+    connectedCallback() {
+        super.connectedCallback();
+    }
+}
+customElements.define(HelloWorld.is, HelloWorld);
+//# sourceMappingURL=hello-world.js.map
