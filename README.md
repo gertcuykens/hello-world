@@ -1,22 +1,20 @@
 # hello-world
 
-Polymer Hello World element.
+Polymer 2.x typescript Hello World element.
 
 ## Dependencies
 
 [PolymerCli](https://github.com/Polymer/polymer-cli)
 
-[Bower](https://bower.io)
+[ESLint](http://eslint.org)
 
-[Babel](https://babeljs.io)
+[Bower](https://bower.io)
 
 [Typings](https://github.com/typings/typings)
 
 ## Install
 
     npm install -g polymer-cli
-    npm install -g babel-cli
-    npm install -g babel-preset-es2015
     npm install -g eslint
     npm install -g bower
     npm install -g typings
@@ -25,18 +23,12 @@ Polymer Hello World element.
     typings install dt~polymer --global --save
     typings install dt~webcomponents.js --global --save
 
-## Lint
-
-    eslint src
-    polymer lint --input hello-world.html
-
-## Build
-
-    babel src -s -o bundle.js
-
 ## Run
 
+    tsc
     polymer serve
+
+hello-world [demo](http://localhost:8080/components/hello-world/demo/)
 
 hello-world [documentation](http://localhost:8080/components/hello-world/)
 
