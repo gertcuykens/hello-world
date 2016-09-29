@@ -1,6 +1,6 @@
 # hello-world
 
-Polymer Hello World element.
+ES2015 Hello World element.
 
 ## Dependencies
 

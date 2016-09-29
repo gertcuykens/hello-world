@@ -1,16 +1,11 @@
-class HelloWorld extends Polymer.Element {
-    static get is() {
-        return 'hello-world';
-    }
-    static get config() {
-        return {};
-    }
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        super.connectedCallback();
-    }
-}
-customElements.define(HelloWorld.is, HelloWorld);
-//# sourceMappingURL=hello-world.js.map
+class HelloWorld extends HTMLElement {                                                                                       
+  constructor() {                                                                                                            
+    super()                                                                                                                  
+    let l = document.querySelector('link[rel="import"]')                                                                     
+    var t = l.import.querySelector('template')                                                                               
+    const instance = t.content.cloneNode(true)                                                                               
+    let shadowRoot = this.attachShadow({ mode: 'open' })                                                                     
+    shadowRoot.appendChild(instance)                                                                                         
+  }                                                                                                                          
+}                                                                                                                            
+customElements.define('hello-world', HelloWorld)

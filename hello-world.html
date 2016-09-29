@@ -1,23 +1,19 @@
 <!--
-Polymer hello-world element.
+ES2015 hello-world element.
 
     <hello-world></hello-world>
 
 @demo demo/index.html
 @hero hero.svg
 -->
-<link rel="import" href="../polymer/polymer-element.html">
-<dom-module id="hello-world">
-  <template>
-    <style>
-      :host {
-        display: block;
-        box-sizing: border-box;
-        border: 1px solid red;
-      }
-    </style>
-    <p>Test</p>
-    <slot></slot>
-  </template>
-  <script src="src/hello-world.js"></script>
-</dom-module>
+<template>
+  <style>
+    :host {
+      display: block;
+      box-sizing: border-box;
+      border: 1px solid red;
+    }
+  </style>
+  <p>Test</p>
+  <slot></slot>
+</template>

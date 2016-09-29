@@ -5,6 +5,7 @@
   "main": "hello-world.html",
   "ignore": [
     "bower_components",
+    "node_modules",
     "test",
     "typings",
     "Makefile",
