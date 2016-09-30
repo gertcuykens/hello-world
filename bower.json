@@ -5,17 +5,15 @@
   "main": "hello-world.html",
   "ignore": [
     "bower_components",
-    "node_modules",
     "test",
-    "typings",
     "Makefile",
     "**/.*"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#2.0-typescript"
+    "polymer": "Polymer/polymer#^1.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "^4.0.0"
+    "web-component-tester": "*"
   }
 }

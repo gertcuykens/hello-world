@@ -21,11 +21,7 @@ ES2015 Hello World element.
     npm install -g babel-preset-es2015
     npm install -g eslint
     npm install -g bower
-    npm install -g typings
     bower install
-    typings install dt~mocha --global --save
-    typings install dt~polymer --global --save
-    typings install dt~webcomponents.js --global --save
 
 ## Run
 
