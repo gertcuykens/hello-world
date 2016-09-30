@@ -12,8 +12,6 @@ ES2015 Hello World element.
 
 [Babel](https://babeljs.io)
 
-[Typings](https://github.com/typings/typings)
-
 ## Install
 
     npm install -g polymer-cli
