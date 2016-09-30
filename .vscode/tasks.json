@@ -11,7 +11,7 @@
       "showOutput": "silent",
       "isBuildCommand": true,
       "isTestCommand": false,      
-      "isWatching": false,
+      "isWatching": true,
       "problemMatcher": ["$tsc"]
     },
     {

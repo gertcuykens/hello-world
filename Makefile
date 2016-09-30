@@ -1,5 +1,5 @@
 build :
-	tsc
+	tsc --watch
 
 lint :
 	eslint hello-world.html
