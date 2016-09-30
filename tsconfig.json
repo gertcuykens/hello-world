@@ -1,14 +1,18 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "target": "es6",
-    "module": "es6",
+    "module": "none",
     "strictNullChecks": true,
     "noImplicitThis": true,
-    "sourceMap": true
+    "noImplicitAny" : true,
+    "sourceMap": true,
+    "outFile": "hello-world.js"
   },
   "include": [
-    "bower_components/polymer/**/*",
-    "bower_components/webcomponentsjs/**/*",
     "src/**/*"
+  ],
+  "files": [
+    "typings/index.d.ts"
   ]
 }
