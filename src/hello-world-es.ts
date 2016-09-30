@@ -1,4 +1,5 @@
-class HelloWorldES extends HTMLElement {                                                                                       
+class HelloWorldES extends HTMLElement {
+  _hello:string = "Hello World"                                                                                      
   constructor() {                                                                                                            
     super()
     const l = document.querySelector('link[rel="import"]')                                                                     
