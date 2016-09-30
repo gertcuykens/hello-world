@@ -29,6 +29,7 @@
         assert.equal(myEl._hello, 'Hello World');
       });
       test('distributed children', function() {
+        console.log(myEl);
         var els = myEl.getContentChildren();
         assert.equal(els.length, 0, 'no distributed nodes');
       });
