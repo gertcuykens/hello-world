@@ -22,4 +22,4 @@ hello-world [demo](http://localhost:8080/components/hello-world/demo/)
 
 hello-world [documentation](http://localhost:8080/components/hello-world/)
 
-hello-world [test](http://localhost:8080/components/hello-world/test/index.html)
+hello-world [test](http://localhost:8080/components/hello-world/test/)

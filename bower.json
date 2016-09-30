@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "main": "hello-world.html",
-  "ignore": ["bower_components", "src", "test", "typings", "Makefile", "**/.*"],
+  "ignore": ["bower_components", "test", "typings", "Makefile", "**/.*"],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "^4.0.0"
+    "web-component-tester": "*"
   }
 }
