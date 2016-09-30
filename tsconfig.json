@@ -3,13 +3,12 @@
     "target": "es6",
     "module": "es6",
     "strictNullChecks": true,
+    "noImplicitThis": true,
     "sourceMap": true
   },
   "include": [
+    "bower_components/polymer/**/*",
+    "bower_components/webcomponentsjs/**/*",
     "src/**/*"
-  ],
-  "exclude": [
-    "bower_components",
-    "node_modules"
   ]
 }
