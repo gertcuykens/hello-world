@@ -10,18 +10,15 @@ Polymer 2.x typescript Hello World element.
 
 [Bower](https://bower.io)
 
-[Typings](https://github.com/typings/typings)
+[TypeSearch](http://microsoft.github.io/TypeSearch/)
 
 ## Install
 
     npm install -g polymer-cli
     npm install -g eslint
     npm install -g bower
-    npm install -g typings
+    npm i -D @types/polymer
     bower install
-    typings install dt~mocha --global --save
-    typings install dt~polymer --global --save
-    typings install dt~webcomponents.js --global --save
 
 ## Run
 
