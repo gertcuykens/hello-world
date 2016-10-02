@@ -3,6 +3,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "none",
+    "experimentalDecorators": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
     "noImplicitAny" : true,
@@ -11,5 +12,8 @@
   },
   "include": [
     "src/**/*"
+  ],
+  "files": [
+    "bower_components/polymer/custom_typings/dom.d.ts"
   ]
 }
