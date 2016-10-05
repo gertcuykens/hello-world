@@ -11,9 +11,7 @@
     "outFile": "hello-world.js"
   },
   "include": [
-    "src/**/*"
-  ],
-  "files": [
-    "bower_components/polymer/custom_typings/dom.d.ts"
+    "src/**/*",
+    "tmp/**/*"
   ]
 }

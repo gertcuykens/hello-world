@@ -12,11 +12,11 @@
     "src"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#2.0-typescript",
+    "polymer": "Polymer/polymer#2.0-preview",
     "webcomponentsjs": "#v1"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
     "web-component-tester": "*"
   }
 }

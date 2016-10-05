@@ -14,10 +14,11 @@ Polymer 2.x typescript Hello World element.
 
 ## Install
 
-    npm install -g polymer-cli
-    npm install -g eslint
-    npm install -g bower
-    npm i -D @types/polymer
+    npm i -g polymer-cli
+    npm i -g eslint
+    npm i -g bower
+    npm i -D reflect-metadata
+    npm i -D @types/reflect-metadata
     bower install
 
 ## Run

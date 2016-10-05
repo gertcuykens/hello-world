@@ -1,4 +1,4 @@
-import {customElement, property, query, queryAll, observe} from 'bower_components/polymer/src/typescript/decorators.js';
+import {customElement, property, query, queryAll, observe} from 'decorators.js';
 
 @customElement('hello-world-dc')
 class HelloWorldDC extends Polymer.Element {
