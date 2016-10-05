@@ -25,13 +25,16 @@
       setup(function() {
         myEl = fixture('hello-world-fixture');
       });
-      test('defines the "_hello" property', function() {
+      test('_hello property', function() {
         assert.equal(myEl._hello, 'Hello World');
       });
-      test('distributed children', function() {
-        console.log(myEl);
-        var els = myEl.getContentChildren();
-        assert.equal(els.length, 0, 'no distributed nodes');
+      test('slots', function() {
+        var slot = myEl.shadowRoot.querySelector('slot');
+        var nodes =  slot ? slot.assignedNodes({flatten: true}) : [];
+        n = nodes.filter(function(n) {
+          return (n.nodeType === Node.ELEMENT_NODE);
+        });
+        assert.equal(n.length, 1, '1 slot');
       });
     });
   </script>
