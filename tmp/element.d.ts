@@ -7,6 +7,7 @@
 interface Window {
   readonly customElements: CustomElementRegistry;
 }
+declare let customElements: CustomElementRegistry;
 
 interface CustomElementRegistry {
   define(name: string, constructor: Function, options?: ElementDefinitionOptions): void;
