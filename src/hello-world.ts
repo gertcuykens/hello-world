@@ -1,5 +1,5 @@
 class HelloWorld extends Polymer.Element {
-    _hello:string = "Hello World"
+    _hello:string = 'Hello World'
     static get is() {
         return 'hello-world';
     }
