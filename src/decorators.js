@@ -8,10 +8,9 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-/// <reference path="../node_modules/reflect-metadata/Reflect.d.ts" />
-
 define(["require", "exports"], function (require, exports) {
     "use strict";
+    /// <reference path="../node_modules/reflect-metadata/Reflect.d.ts" />
     /**
      * A TypeScript class decorator that defines a custom element with name
      * `tagname` and the decorated class.
@@ -23,7 +22,6 @@ define(["require", "exports"], function (require, exports) {
         };
     }
     exports.customElement = customElement;
-    ;
     /**
      * A TypeScript property decorator factory that defines this as a Polymer
      * property.
