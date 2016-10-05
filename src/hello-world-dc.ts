@@ -1,12 +1,16 @@
-import {customElement, property, query, queryAll, observe} from 'decorators.js';
+import { customElement, property, query, queryAll, observe } from 'tmp/decorators.js';
 
 @customElement('hello-world-dc')
 class HelloWorldDC extends Polymer.Element {
+  //reuse template hello-world
+  static get is() {
+    return 'hello-world';
+  }
 
-  @property({notify: true})
+  @property({ notify: true })
   foo: number = 42;
 
-  @property({notify: true})
+  @property({ notify: true })
   bar: string = 'yes';
 
   @query('h1')
