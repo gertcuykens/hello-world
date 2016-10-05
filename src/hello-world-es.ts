@@ -3,9 +3,9 @@ class HelloWorldES extends HTMLElement {
   constructor() {                                                                                                            
     super()
     const l = document.querySelector('link[rel="import"]') as HTMLLinkElement                                                                    
-    if (l == null) return;
+    if (l.import == null) return;
     const t = l.import.querySelector('template')
-    if (t == null) return;                                                                          
+    if (t == null) return;                                                    
     const instance = t.content.cloneNode(true)                                                                      
     const shadowRoot = this.attachShadow({ mode: 'open' })                                                                     
     shadowRoot.appendChild(instance)                                                                                         
