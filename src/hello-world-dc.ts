@@ -8,7 +8,7 @@ class HelloWorldDC extends Polymer.Element {
   static get is() {
     return 'hello-world';
   }
-  
+
   // static get config() {
   //   return {};
   // }
