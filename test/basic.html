@@ -23,18 +23,18 @@
     suite('<hello-world>', function() {
       var myEl;
       setup(function() {
-        myEl = fixture('hello-world-fixture');
-      });
+        myEl = fixture('hello-world-fixture')
+      })
       test('_hello', function() {
-        assert.equal(myEl._hello, 'Hello World');
-      });
-      test('slot', function() {
-        var slot = myEl.shadowRoot.querySelector('slot');
+        assert.equal(myEl._hello, 'Hello World')
+      })
+      test('innerHTML', function() {
+        // var slot = myEl.shadowRoot.querySelector('slot');
         // var nodes =  slot ? slot.assignedNodes({flatten: true}) : [];
         // n = nodes.filter( function(n) { return (n.nodeType === Node.ELEMENT_NODE) } )
-        assert.equal(slot.innerHTML, 'Hello World');
-      });
-    });
+        assert.equal(myEl.innerHTML, 'Hello World')
+      })
+    })
   </script>
 
 </body>
