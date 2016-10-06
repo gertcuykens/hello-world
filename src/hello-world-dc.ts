@@ -2,10 +2,19 @@ import { customElement, property, query, queryAll, observe } from 'tmp/decorator
 
 @customElement('hello-world-dc')
 class HelloWorldDC extends Polymer.Element {
-  //reuse template hello-world
+  _hello: string = 'Hello World'
+
+  // re-use template hello-world
   static get is() {
     return 'hello-world';
   }
+  
+  // static get config() {
+  //   return {};
+  // }
+  // constructor() {
+  //   super();
+  // }
 
   @property({ notify: true })
   foo: number = 42;
@@ -30,3 +39,4 @@ class HelloWorldDC extends Polymer.Element {
   }
 
 }
+// customElements.define('hello-world-dc', HelloWorldDC)

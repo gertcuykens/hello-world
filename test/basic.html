@@ -15,7 +15,7 @@
 
   <test-fixture id="hello-world-fixture">
     <template>
-      <hello-world></hello-world>
+      <hello-world>Hello World</hello-world>
     </template>
   </test-fixture>
 
@@ -25,16 +25,14 @@
       setup(function() {
         myEl = fixture('hello-world-fixture');
       });
-      test('_hello property', function() {
+      test('_hello', function() {
         assert.equal(myEl._hello, 'Hello World');
       });
-      test('slots', function() {
+      test('slot', function() {
         var slot = myEl.shadowRoot.querySelector('slot');
-        var nodes =  slot ? slot.assignedNodes({flatten: true}) : [];
-        n = nodes.filter(function(n) {
-          return (n.nodeType === Node.ELEMENT_NODE);
-        });
-        assert.equal(n.length, 1, '1 slot');
+        // var nodes =  slot ? slot.assignedNodes({flatten: true}) : [];
+        // n = nodes.filter( function(n) { return (n.nodeType === Node.ELEMENT_NODE) } )
+        assert.equal(slot.innerHTML, 'Hello World');
       });
     });
   </script>
