@@ -1,19 +1,25 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2015",
     "module": "none",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
-    "noImplicitAny" : true,
+    "noImplicitAny": true,
     "sourceMap": true,
     "outFile": "hello-world.js",
-    "lib": ["es2017", "dom"]
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "typeRoots": [
+      "types"
+    ]
   },
   "include": [
     "src/**/*",
-    "tmp/**/*"
+    "types/**/*"
   ]
 }

@@ -10,5 +10,18 @@ class HelloWorldES extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: 'open' })
     shadowRoot.appendChild(instance)
   }
+  connectedCallback() { }
+  disconnectedCallback() { }
+  attributeChangedCallback(name: string, oldValue: string, newValue: string) { }
+  adoptedCallback() { }
 }
-customElements.define('hello-world-es', HelloWorldES)
+
+class HelloWorldES2 extends HelloWorldES {
+  constructor() {
+    super()
+  }
+  connectedCallback() {
+    super.connectedCallback()
+  }
+}
+customElements.define('hello-world-es', HelloWorldES2)

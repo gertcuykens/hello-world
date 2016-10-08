@@ -1,24 +1,11 @@
 # hello-world
 
-Polymer 2.x typescript Hello World element.
-
-## Dependencies
-
-[PolymerCli](https://github.com/Polymer/polymer-cli)
-
-[ESLint](http://eslint.org)
-
-[Bower](https://bower.io)
-
-[TypeSearch](http://microsoft.github.io/TypeSearch/)
+Custom Elements v1 typescript Hello World example.
 
 ## Install
 
     npm i -g polymer-cli
-    npm i -g eslint
     npm i -g bower
-    npm i -D reflect-metadata
-    npm i -D @types/reflect-metadata
     bower install
 
 ## Run
