@@ -1,0 +1,43 @@
+<!-- EXPERIMENTAL <script type="ts/module">
+Polymer hello-world element.
+
+    <hello-world></hello-world>
+
+@demo demo/index.html
+@hero hero.svg
+-->
+<link rel="import" href="../polymer/polymer-element.html">
+<dom-module id="hello-world">
+  <template>
+    <style>
+      :host {
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid red;
+        margin-top: 10px;
+        padding: 0px 5px;
+      }
+    </style>
+    <p>Test <slot></slot></p>
+  </template>
+  <script type="ts/module">
+    class HelloWorld extends Polymer.Element {
+      _hello: string = 'Hello World'
+      static get is() {
+        const test: string = 'test intelli'
+        test.toUpperCase()
+        return 'hello-world';
+      }
+      static get config() {
+        return {};
+      }
+      constructor() {
+        super();
+      }
+      connectedCallback() {
+        super.connectedCallback();
+      }
+    }
+    customElements.define(HelloWorld.is, HelloWorld);  
+  </script>
+</dom-module>

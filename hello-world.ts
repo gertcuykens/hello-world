@@ -1,3 +1,22 @@
+class HelloWorld extends Polymer.Element {
+  _hello: string = 'Hello World'
+  static get is() {
+    const test: string = 'test intelli'
+    test.toUpperCase()
+    return 'hello-world';
+  }
+  static get config() {
+    return {};
+  }
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    super.connectedCallback();
+  }
+}
+customElements.define(HelloWorld.is, HelloWorld);
+
 class HelloWorldES extends HTMLElement {
   _hello: string = "Hello World"
   constructor() {

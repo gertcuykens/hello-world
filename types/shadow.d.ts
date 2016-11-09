@@ -3,6 +3,7 @@
  *
  * Based on https://www.w3.org/TR/2016/WD-shadow-dom-20160830/
  */
+
 interface DocumentOrShadowRoot {
     getSelection(): Selection | null;
     elementFromPoint(x: number, y: number): Element | null;

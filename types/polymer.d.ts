@@ -21,8 +21,7 @@ interface Base {}
  * A subclass-factory style mixin that extends `superclass` with a new subclass
  * that implements the interface `M`.
  */
-type Mixin<M> =
-    <C extends Base>(superclass: Constructor<C>) => Constructor<M & C>;
+type Mixin<M> = <C extends Base>(superclass: Constructor<C>) => Constructor<M & C>;
 
 /**
  * The Polymer function and namespace.
@@ -59,6 +58,8 @@ declare class PolymerElement extends PolymerMetaEffects {
 
   ready(): void;
   updateStyles(properties: string[]): void;
+  connectedCallback(): void;
+  disconnectedCallback(): void;
 }
 
 declare class PolymerPropertyEffects extends HTMLElement {
