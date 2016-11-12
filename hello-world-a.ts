@@ -1,27 +1,8 @@
-class HelloWorld extends Polymer.Element {
-  _hello: string = 'Hello World'
-  static get is() {
-    const test: string = 'test intelli'
-    test.toUpperCase()
-    return 'hello-world';
-  }
-  static get config() {
-    return {};
-  }
-  constructor() {
-    super();
-  }
-  connectedCallback() {
-    super.connectedCallback();
-  }
-}
-customElements.define(HelloWorld.is, HelloWorld);
-
 /////////////////////////
 // ES6 WITHOUT POLYMER //
 /////////////////////////
 
-class HelloWorldES extends HTMLElement {
+export default class HelloWorldA extends HTMLElement {
   _hello: string = "Hello World"
   constructor() {
     super()
@@ -48,18 +29,3 @@ class HelloWorldES extends HTMLElement {
   attributeChangedCallback(name: string, oldValue: string, newValue: string) { }
   adoptedCallback() { }
 }
-
-//////////////////////
-// ES6 POLYMORPHISM //
-//////////////////////
-
-class HelloWorldES2 extends HelloWorldES {
-  constructor() {
-    super()
-  }
-  connectedCallback() {
-    super.connectedCallback()
-  }
-}
-
-customElements.define('hello-world-es', HelloWorldES2)

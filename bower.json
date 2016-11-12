@@ -13,7 +13,8 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#2.0-preview",
-    "webcomponentsjs": "#v1"
+    "webcomponentsjs": "#v1",
+    "requirejs": "^2.3.2"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
