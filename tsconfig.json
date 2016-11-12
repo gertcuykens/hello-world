@@ -16,9 +16,5 @@
     "typeRoots": [
       "types"
     ]
-  },
-  "include": [
-    "hello-world.ts",
-    "types/**/*"
-  ]
+  }
 }
