@@ -1,3 +1,5 @@
+/// <amd-module name="hello-world-b"/>
+
 //////////////////////
 // ES6 POLYMORPHISM //
 //////////////////////
