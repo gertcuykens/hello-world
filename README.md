@@ -1,6 +1,6 @@
 # hello-world
 
-Custom Elements v1 typescript Hello World example.
+Custom Elements typescript Hello World example.
 
 ## Install
 
