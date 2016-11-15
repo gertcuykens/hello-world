@@ -6,10 +6,10 @@
 
 export default class HelloWorldA extends HTMLElement {
   _hello: string = "Hello World"
+  template = document.createElement('template')
   constructor() {
     super()
-    const template = document.createElement('template')
-    template.innerHTML = `
+    this.template.innerHTML = `
       <style>
         :host {
           display: block;
@@ -21,11 +21,11 @@ export default class HelloWorldA extends HTMLElement {
       </style>
       <p>Test <slot></slot></p>
     `
-    if (!HTMLElement.prototype.attachShadow) ShadyCSS.prepareTemplate(template, 'hello-world-b');
-    const shadowRoot = this.attachShadow({ mode: 'open' })
-    shadowRoot.appendChild(template.content.cloneNode(true))
+    if (!HTMLElement.prototype.attachShadow) ShadyCSS.prepareTemplate(this.template, 'hello-world-b');
   }
   connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: 'open' })
+    shadowRoot.appendChild(this.template.content.cloneNode(true))
     if (!HTMLElement.prototype.attachShadow) { ShadyCSS.applyStyle(this) }
   }
   disconnectedCallback() { }
