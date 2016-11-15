@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Custom Elements</title>
-  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-  <script data-main="../hello-world-b" type="text/javascript" src="../requirejs/require.js"></script>
+  <!--<script src="../webcomponentsjs/webcomponents-lite.js"></script>-->
+  <script async>
+    function loadScript(src, main) {
+      return new Promise(function(resolve, reject) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = src;
+        if (main) script.dataset.main = main;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.head.appendChild(script);
+      });
+    }
+    const loadPromises = [];
+    if (!('customElements' in window)) {
+      loadPromises.push(loadScript('../custom-elements/custom-elements.min.js'));
+    }
+    if (!HTMLElement.prototype.attachShadow) {
+      loadPromises.push(loadScript('../shadydom/shadydom.min.js'));
+      loadPromises.push(loadScript('../shadycss/shadycss.min.js'));
+    }
+    Promise.all(loadPromises)
+      .then(e => loadScript('../requirejs/require.js', '../hello-world-b'))
+      .then(e => console.log('hello-world-b loaded'))
+  </script>
   <link rel="icon" href="../hero.svg" type="image/svg+xml">
-  <link rel="import" href="../hello-world.html">
+  <!--<link rel="import" href="../hello-world.html">-->
 </head>
 <body>
-  <hello-world>Hello World Polymer 2.x</hello-world>
+  <!--<hello-world>Hello World Polymer 2.x</hello-world>-->
   <hello-world-b>Hello World ES2015</hello-world-b>
 </body>
 </html>

@@ -14,7 +14,10 @@
   "dependencies": {
     "polymer": "Polymer/polymer#2.0-preview",
     "webcomponentsjs": "#v1",
-    "requirejs": "^2.3.2"
+    "requirejs": "^2.3.2",
+    "shadydom": "webcomponents/shadydom#master",
+    "shadycss": "webcomponents/shadycss#master",
+    "custom-elements": "webcomponents/custom-elements#master"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#2.0-preview",
