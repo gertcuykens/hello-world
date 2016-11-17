@@ -11,7 +11,7 @@ export default class HelloWorldA extends HTMLElement {
     super()
     this.template.innerHTML = `
       <style>
-        :host {
+        :host, hello-world-b {
           display: block;
           box-sizing: border-box;
           border: 1px solid red;
@@ -21,12 +21,12 @@ export default class HelloWorldA extends HTMLElement {
       </style>
       <p>Test <slot></slot></p>
     `
-    if (!HTMLElement.prototype.attachShadow) ShadyCSS.prepareTemplate(this.template, 'hello-world-b');
+    if (shady) ShadyCSS.prepareTemplate(this.template, 'hello-world-b');
   }
   connectedCallback() {
     const shadowRoot = this.attachShadow({ mode: 'open' })
     shadowRoot.appendChild(this.template.content.cloneNode(true))
-    if (!HTMLElement.prototype.attachShadow) { ShadyCSS.applyStyle(this) }
+    if (shady) { ShadyCSS.applyStyle(this) }
   }
   disconnectedCallback() { }
   attributeChangedCallback(name: string, oldValue: string, newValue: string) { }

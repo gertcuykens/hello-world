@@ -16,17 +16,19 @@
         document.head.appendChild(script);
       });
     }
+    let shady = false;
     const loadPromises = [];
     if (!('customElements' in window)) {
       loadPromises.push(loadScript('../custom-elements/custom-elements.min.js'));
     }
     if (!HTMLElement.prototype.attachShadow) {
+      shady = true
       loadPromises.push(loadScript('../shadydom/shadydom.min.js'));
       loadPromises.push(loadScript('../shadycss/shadycss.min.js'));
     }
     Promise.all(loadPromises)
+      .then(e => console.log(`shady ${shady}`))
       .then(e => loadScript('../requirejs/require.js', '../hello-world-b'))
-      .then(e => console.log('hello-world-b loaded'))
   </script>
   <link rel="icon" href="../hero.svg" type="image/svg+xml">
   <!--<link rel="import" href="../hello-world.html">-->

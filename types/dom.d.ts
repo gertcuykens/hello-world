@@ -1,6 +1,7 @@
-// interface ShadyCSS {
-//   prepareTemplate(): any;
-//   applyStyle(): any;
-// }
+interface ShadyCSS {
+  prepareTemplate: any;
+  applyStyle: any;
+}
+declare let ShadyCSS: ShadyCSS
 
-declare let ShadyCSS: any
+declare let shady: boolean
